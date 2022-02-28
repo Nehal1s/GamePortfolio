@@ -1,0 +1,321 @@
+$charcoal: #36454f
+$olive: #3b3c36
+$jet-black:  #343434
+$eigengrau:#16161d
+$ebony: #282C35
+$violet: #32174d41
+$onyx: #0f0f0f
+    
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Padauk&display=swap')
+    
+    
+body
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+    overflow: hidden
+    font-family: monospace
+
+.container
+    width: 100vw
+    height: 100vh
+    background: violet
+    .name-slider
+        text-align: center  
+        font-size: 7rem
+        position: absolute
+        // display: none
+        padding: 0
+        margin: 0
+        z-index: 2
+        font-family: 'Dancing Script', cursive
+        transition: 0.7s cubic-bezier(0.42, 0, 0, 0.99)
+        color: white
+        top: 30%
+        left: 5%
+
+    nav
+        top: 0
+        right: 0
+        bottom: 0
+        width: 80px
+        height: 100%
+        position: absolute
+        background-color: white
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        flex-direction: column
+
+
+        .slider
+            width: 100%
+            height: 25%
+            background-color: black
+            position: absolute
+            top: 0
+            left: 0
+            opacity: 0
+            color: white
+            transition: .3s ease-in
+            cursor: pointer
+            letter-spacing: 4px
+            z-index: 2
+            pointer-events: none
+            h3
+                transform: rotate(90deg)
+                background: black
+
+        h2
+            transform: rotate(90deg)
+            transition: 0.1s ease-in
+            cursor: pointer
+            letter-spacing: 4px
+            text-align: center
+            &:hover
+                color: $violet
+
+
+
+    section
+        width: calc(100% - 60px)
+        height: 100%
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: 0.7s cubic-bezier(0.42, 0, 0, 0.99)
+        background-color: #3d3d3d
+        color: white
+        .button
+            position: absolute
+            top: 0
+            right: 0
+            opacity: 0
+            padding-right: 2%
+            background: none
+            border: none
+            font-size: 3vw
+            color: #92979bc9
+            z-index: 2
+            &:hover
+                color: #a8a84a94
+    .home
+        background: black
+        background-size: cover
+        color: white
+        .left
+            width: 100%
+            h1
+                text-align: center  
+                font-size: 5vw
+                padding: 0
+                margin: 0
+                z-index: 2
+                font-family: 'Dancing Script', cursive
+                transition: 0.7s cubic-bezier(0.42, 0, 0, 0.99)
+                color: white
+            p
+                transition: 0.7s cubic-bezier(0.42, 0, 0, 0.99)
+                font-size: 1.5vw
+                text-align: center
+        .right
+            width: 50%
+            height: 60%
+            transform: rotate(45deg)
+            overflow: hidden
+            border: 1px white solid
+            img
+                width: 100%
+                bottom: 0
+                transform: translate(2rem, 2rem) rotate(-45deg)
+
+    .WorkFell
+        transform: translateX(100%)
+        height: 100%
+        
+
+    .ProjectsFell
+        transform: translateX(100%)
+        .project-container
+            display: flex
+            flex-flow: row wrap
+            justify-content: center
+    .AboutFell
+        transform: translateX(100%)
+        flex-direction: column
+        .about_container
+            display: flex
+            flex-direction: row
+        .heading
+            font-size: 1.7vw
+            letter-spacing: 0.6vw
+            margin: 1vw
+            h2
+                margin: 0
+        .history
+            margin: 2vw 
+            max-width: 45%
+            font-size: 1.1vw
+
+        .education
+            padding: 1vw
+            margin: 2vw
+            .edu_head
+                margin: 0.6vw
+                font-size: 1vw
+            .edu_grade
+                margin: 0.6vw
+                font-size: 1vw
+            .edu_name
+                margin: 0.6vw
+                letter-spacing: 0.4vw
+                font-size: 1.8vw
+            .edu_progress
+                width: 60%
+                height: 5px
+                background: $jet-black
+                border-radius: 3rem
+                margin: 0.6vw
+                overflow: hidden
+                .sliderr
+                    width: 2%
+                    background: white
+                    height: 100%
+                    transition: 0.7s cubic-bezier(0.6, 0.02, 0.73, 1.16)
+                    transition-delay: 0.3s
+            .secondary_sec
+                margin-block: 2.5vw
+                        
+            .higher_sec
+                margin-block: 2.5vw
+                .sliderr
+                    transition-delay: 0.4s
+            .college
+                margin-block: 2.5vw
+                .sliderr
+                    transition-delay: 0.5s
+                        
+    .ContactFell
+        transform: translateX(100%)
+        img
+            width: 100%
+            opacity: 1
+        div
+            border-radius: 0.3vw
+            margin: 2vw
+            background: black
+            overflow: hidden
+            transform: translateY(30px)
+            width: 4vw
+        .animeeee
+            animation: anime 0.6s cubic-bezier(0.6, 0.02, 0.73, 1.16) forwards
+            @keyframes anime
+                75%
+                    transform: translateY(0px)
+                    opacity: 0.9
+                100%
+                    box-shadow: 0 0 5em -1em black
+                    transform: translateY(0px) scale(1.2)
+        .gmail
+            animation-delay: 0.4s
+        .phone
+            animation-delay: 0.5s
+        .insta
+            animation-delay: 0.6s
+        .linkden
+            animation-delay: 0.7s
+                    
+    .inFell
+        transform: translateX(0%)
+
+    .small-cards
+        // background-color: $jet-black
+        background-color: #3d3d3d /* Tint color */
+        background-size: cover
+        width: 70%
+        position: relative
+        max-width: 400px
+        height: 550px
+        margin: 1rem
+        flex-basis: 60% 
+        overflow: hidden
+        transition: 0.3s cubic-bezier(0.42, 0, 0, 0.99)
+        box-shadow: 0 0 35px #00000030          
+        
+        .img
+            height: 80%
+            background-size: cover
+            background-position: center
+            transition: 0.3s cubic-bezier(0.42, 0, 0, 0.99)
+        
+        
+        h3,p
+            margin: 0
+            padding: 0
+        .got
+            bottom: 0
+            color: white
+            background-color: #3d3d3d
+            border-radius: 0.7rem 0.7rem 0 0
+            transition: 0.3s cubic-bezier(0.42, 0, 0, 1.6)
+            transform: translateY(-10px)
+            .p-name
+                padding: 1rem
+                font-size: 1.7rem
+
+
+            .p-des
+                padding: 1rem
+                font-size: 1rem
+                font-family: 'Padauk', sans-serif
+                letter-spacing: .01rem
+                flex-direction: column
+                h3
+                    font-size: 1.4rem
+                    border-bottom: 1px solid #3d3d3d
+                    transition: 0.3s ease-in
+                    transition-delay: 0.3s
+                
+        &:hover .img
+            transform: scale(1.4)
+            opacity: 0.5
+        &:hover .got    
+            transform: translateY(-68%)
+        &:hover
+            box-shadow: 0 0 35px #00000070     
+        &:hover .got h3
+            border-bottom: 1px solid white
+            
+
+        @media(max-width: 1073px)
+            flex-basis: 50%
+        @media(max-width: 555px)
+            flex-basis: 100%
+            
+
+.slide
+    transform: translateX(-40%) 
+    opacity: 0
+
+.abs
+    transform: translateX(100%)
+
+.apt
+    text-align: center  
+    font-size: 7vw
+    padding: 0
+    margin: 0
+    opacity: 0
+    z-index: 2
+    font-family: 'Dancing Script', cursive
+    transition: 0.7s cubic-bezier(0.42, 0, 0, 0.99)
+    color: white
+    transition-delay: 0.3s
+
+.flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+    

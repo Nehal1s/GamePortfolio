@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Padauk&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: violet;
+}
+.container .name-slider {
+  text-align: center;
+  font-size: 7rem;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  font-family: "Dancing Script", cursive;
+  transition: 0.7s cubic-bezier(0.42, 0, 0, 0.99);
+  color: white;
+  top: 30%;
+  left: 5%;
+}
+.container nav {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.container nav .slider {
+  width: 100%;
+  height: 25%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  letter-spacing: 4px;
+  z-index: 2;
+  pointer-events: none;
+}
+.container nav .slider h3 {
+  transform: rotate(90deg);
+  background: black;
+}
+.container nav h2 {
+  transform: rotate(90deg);
+  transition: 0.1s ease-in;
+  cursor: pointer;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.container nav h2:hover {
+  color: #32174d41;
+}
+.container section {
+  width: calc(100% - 60px);
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s cubic-bezier(0.42, 0, 0, 0.99);
+  background-color: #3d3d3d;
+  color: white;
+}
+.container section .button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  padding-right: 2%;
+  background: none;
+  border: none;
+  font-size: 3vw;
+  color: #92979bc9;
+  z-index: 2;
+}
+.container section .button:hover {
+  color: #a8a84a94;
+}
+.container .home {
+  background: black;
+  background-size: cover;
+  color: white;
+}
+.container .home .left {
+  width: 100%;
+}
+.container .home .left h1 {
+  text-align: center;
+  font-size: 5vw;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  font-family: "Dancing Script", cursive;
+  transition: 0.7s cubic-bezier(0.42, 0, 0, 0.99);
+  color: white;
+}
+.container .home .left p {
+  transition: 0.7s cubic-bezier(0.42, 0, 0, 0.99);
+  font-size: 1.5vw;
+  text-align: center;
+}
+.container .home .right {
+  width: 50%;
+  height: 60%;
+  transform: rotate(45deg);
+  overflow: hidden;
+  border: 1px white solid;
+}
+.container .home .right img {
+  width: 100%;
+  bottom: 0;
+  transform: translate(2rem, 2rem) rotate(-45deg);
+}
+.container .WorkFell {
+  transform: translateX(100%);
+  height: 100%;
+}
+.container .ProjectsFell {
+  transform: translateX(100%);
+}
+.container .ProjectsFell .project-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.container .AboutFell {
+  transform: translateX(100%);
+  flex-direction: column;
+}
+.container .AboutFell .about_container {
+  display: flex;
+  flex-direction: row;
+}
+.container .AboutFell .heading {
+  font-size: 1.7vw;
+  letter-spacing: 0.6vw;
+  margin: 1vw;
+}
+.container .AboutFell .heading h2 {
+  margin: 0;
+}
+.container .AboutFell .history {
+  margin: 2vw;
+  max-width: 45%;
+  font-size: 1.1vw;
+}
+.container .AboutFell .education {
+  padding: 1vw;
+  margin: 2vw;
+}
+.container .AboutFell .education .edu_head {
+  margin: 0.6vw;
+  font-size: 1vw;
+}
+.container .AboutFell .education .edu_grade {
+  margin: 0.6vw;
+  font-size: 1vw;
+}
+.container .AboutFell .education .edu_name {
+  margin: 0.6vw;
+  letter-spacing: 0.4vw;
+  font-size: 1.8vw;
+}
+.container .AboutFell .education .edu_progress {
+  width: 60%;
+  height: 5px;
+  background: #343434;
+  border-radius: 3rem;
+  margin: 0.6vw;
+  overflow: hidden;
+}
+.container .AboutFell .education .edu_progress .sliderr {
+  width: 2%;
+  background: white;
+  height: 100%;
+  transition: 0.7s cubic-bezier(0.6, 0.02, 0.73, 1.16);
+  transition-delay: 0.3s;
+}
+.container .AboutFell .education .secondary_sec {
+  margin-block: 2.5vw;
+}
+.container .AboutFell .education .higher_sec {
+  margin-block: 2.5vw;
+}
+.container .AboutFell .education .higher_sec .sliderr {
+  transition-delay: 0.4s;
+}
+.container .AboutFell .education .college {
+  margin-block: 2.5vw;
+}
+.container .AboutFell .education .college .sliderr {
+  transition-delay: 0.5s;
+}
+.container .ContactFell {
+  transform: translateX(100%);
+}
+.container .ContactFell img {
+  width: 100%;
+  opacity: 1;
+}
+.container .ContactFell div {
+  border-radius: 0.3vw;
+  margin: 2vw;
+  background: black;
+  overflow: hidden;
+  transform: translateY(30px);
+  width: 4vw;
+}
+.container .ContactFell .animeeee {
+  animation: anime 0.6s cubic-bezier(0.6, 0.02, 0.73, 1.16) forwards;
+}
+@keyframes anime {
+  75% {
+    transform: translateY(0px);
+    opacity: 0.9;
+  }
+  100% {
+    box-shadow: 0 0 5em -1em black;
+    transform: translateY(0px) scale(1.2);
+  }
+}
+.container .ContactFell .gmail {
+  animation-delay: 0.4s;
+}
+.container .ContactFell .phone {
+  animation-delay: 0.5s;
+}
+.container .ContactFell .insta {
+  animation-delay: 0.6s;
+}
+.container .ContactFell .linkden {
+  animation-delay: 0.7s;
+}
+.container .inFell {
+  transform: translateX(0%);
+}
+.container .small-cards {
+  background-color: #3d3d3d;
+  background-size: cover;
+  width: 70%;
+  position: relative;
+  max-width: 400px;
+  height: 550px;
+  margin: 1rem;
+  flex-basis: 60%;
+  overflow: hidden;
+  transition: 0.3s cubic-bezier(0.42, 0, 0, 0.99);
+  box-shadow: 0 0 35px #00000030;
+}
+.container .small-cards .img {
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s cubic-bezier(0.42, 0, 0, 0.99);
+}
+.container .small-cards h3, .container .small-cards p {
+  margin: 0;
+  padding: 0;
+}
+.container .small-cards .got {
+  bottom: 0;
+  color: white;
+  background-color: #3d3d3d;
+  border-radius: 0.7rem 0.7rem 0 0;
+  transition: 0.3s cubic-bezier(0.42, 0, 0, 1.6);
+  transform: translateY(-10px);
+}
+.container .small-cards .got .p-name {
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+.container .small-cards .got .p-des {
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Padauk", sans-serif;
+  letter-spacing: 0.01rem;
+  flex-direction: column;
+}
+.container .small-cards .got .p-des h3 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid #3d3d3d;
+  transition: 0.3s ease-in;
+  transition-delay: 0.3s;
+}
+.container .small-cards:hover .img {
+  transform: scale(1.4);
+  opacity: 0.5;
+}
+.container .small-cards:hover .got {
+  transform: translateY(-68%);
+}
+.container .small-cards:hover {
+  box-shadow: 0 0 35px #00000070;
+}
+.container .small-cards:hover .got h3 {
+  border-bottom: 1px solid white;
+}
+@media (max-width: 1073px) {
+  .container .small-cards {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 555px) {
+  .container .small-cards {
+    flex-basis: 100%;
+  }
+}
+
+.slide {
+  transform: translateX(-40%);
+  opacity: 0;
+}
+
+.abs {
+  transform: translateX(100%);
+}
+
+.apt {
+  text-align: center;
+  font-size: 7vw;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  z-index: 2;
+  font-family: "Dancing Script", cursive;
+  transition: 0.7s cubic-bezier(0.42, 0, 0, 0.99);
+  color: white;
+  transition-delay: 0.3s;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=index.css.map */
